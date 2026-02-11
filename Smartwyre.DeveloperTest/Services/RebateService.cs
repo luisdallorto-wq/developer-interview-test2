@@ -28,7 +28,7 @@ public class RebateService : IRebateService
 
         var result = new CalculateRebateResult();
 
-        if (rebate == null || product == null)
+        if (rebate == null || product == null || rebate.Incentive == IncentiveType.None)
         {
             result.Success = false;
             return result;

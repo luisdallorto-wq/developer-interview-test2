@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Smartwyre.DeveloperTest.Services
 {
-    internal class FixedCashAmountCalculator : IRebateCalculator
+    public class FixedCashAmountCalculator : IRebateCalculator
     {
         public CalculateRebateResult CalculateRebateAmount(Rebate rebate, Product product, CalculateRebateRequest request)
         {
