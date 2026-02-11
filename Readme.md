@@ -47,7 +47,7 @@ DeveloperTest.Tests
 
 There are two test files:
 
-### 1️⃣ PaymentServiceTests
+### 1️⃣ RebateServiceTests
 
 This test class verifies:
 
