@@ -7,13 +7,13 @@ namespace Smartwyre.DeveloperTest.Services;
 
 public class RebateService : IRebateService
 {
-    private readonly RebateDataStore _rebateDataStore;
-    private readonly ProductDataStore _productDataStore;
+    private readonly IRebateDataStore _rebateDataStore;
+    private readonly IProductDataStore _productDataStore;
     private readonly IEnumerable<IRebateCalculator> _calculators;
 
     public RebateService(
-        RebateDataStore rebateDataStore,
-        ProductDataStore productDataStore,
+        IRebateDataStore rebateDataStore,
+        IProductDataStore productDataStore,
         IEnumerable<IRebateCalculator> calculators)
     {
         _rebateDataStore = rebateDataStore;

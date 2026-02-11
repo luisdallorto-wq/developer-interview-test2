@@ -1,10 +1,8 @@
 ﻿using Smartwyre.DeveloperTest.Types;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Smartwyre.DeveloperTest.Services
 {
+    //specifically for FixedRateRebate, the rebate amount is calculated as: Product Price * Rebate Percentage * Volume.
     public class FixedRateRebateCalculator: IRebateCalculator
     {
         public CalculateRebateResult CalculateRebateAmount(Rebate rebate, Product product, CalculateRebateRequest request)

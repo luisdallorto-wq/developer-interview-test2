@@ -1,10 +1,8 @@
 ﻿using Smartwyre.DeveloperTest.Types;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Smartwyre.DeveloperTest.Services
 {
+    //Specifically for fixed cash amount rebate, the rebate amount is determined solely by the rebate's Amount property, regardless of the product price or volume.
     public class FixedCashAmountCalculator : IRebateCalculator
     {
         public CalculateRebateResult CalculateRebateAmount(Rebate rebate, Product product, CalculateRebateRequest request)

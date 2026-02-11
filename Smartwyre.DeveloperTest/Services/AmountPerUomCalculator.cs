@@ -1,10 +1,8 @@
 ﻿using Smartwyre.DeveloperTest.Types;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Smartwyre.DeveloperTest.Services
 {
+    // Specifically for AmountPerUom incentive type, this calculator computes the rebate amount by multiplying the rebate's fixed amount by the volume specified in the request.
     public class AmountPerUomCalculator: IRebateCalculator
     {
         public CalculateRebateResult CalculateRebateAmount(Rebate rebate, Product product, CalculateRebateRequest request)
