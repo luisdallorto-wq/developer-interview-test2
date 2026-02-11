@@ -7,7 +7,7 @@ using Xunit;
 
 namespace Smartwyre.DeveloperTest.Tests;
 
-//I want to verify the actual business logic of each calculator, so 3 test units were added with real calculator implementations,
+//important! This test class is to verify the actual business logic of each calculator, so 3 test units were added with real calculator implementations,
 public class RealRebateCalculatorTests
 {
     private readonly Mock<IRebateDataStore> _rebateStoreMock;

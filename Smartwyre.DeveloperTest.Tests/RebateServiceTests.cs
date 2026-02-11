@@ -17,7 +17,7 @@ public class RebateServiceTests
     private readonly Mock<IProductDataStore> _productStoreMock;
     private readonly Mock<IRebateCalculator> _calculatorMock;
 
-    private readonly RebateService _service;
+    private readonly RebateService _service; // using the real service implementation, but with mocked dependencies to verify orchestration behavior
 
     public RebateServiceTests()
     {
